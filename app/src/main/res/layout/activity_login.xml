@@ -15,17 +15,34 @@
         android:layout_gravity="center"
         android:text="Welcome to RunBattle"
         android:layout_alignWithParentIfMissing="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp"
+        android:layout_marginTop="112dp"
         android:textSize="30sp"
-        android:id="@+id/textView" />
-    <Button
-        android:id="@+id/weChatLogin"
-        android:text="Wechat Login"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp" />
+        android:layout_above="@+id/passWord"/>
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_above="@+id/Login"/>
+
+    <Button
+        android:id="@+id/Login"
+        android:text="Login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button weChatLoginButton = (Button) findViewById(R.id.weChatLogin);
+        Button weChatLoginButton = (Button) findViewById(R.id.Login);
         weChatLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // use weChat ID to login
