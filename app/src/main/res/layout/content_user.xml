@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.daydream.f.runbattle.UserActivity"
+    tools:showIn="@layout/activity_user">
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/vPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人最佳"
+        android:layout_below="@+id/userIcon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/pb"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vPB"
+        android:layout_toEndOf="@+id/userIcon" />
+
+    <View
+        android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        android:layout_alignBottom="@+id/vPB"
+        android:layout_toEndOf="@+id/userIcon" />
+        />
+
+
+    <TextView
+        android:id="@+id/MBView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月度最佳"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/vPB" />
+    <TextView
+        android:id="@+id/mb"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/MBView"
+        android:layout_alignStart="@+id/pb" />
+
+    <View
+        android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        android:layout_alignBottom="@+id/MBView"
+        android:layout_toEndOf="@+id/userIcon" />
+    />
+
+    <TextView
+        android:id="@+id/ScoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="战        绩"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/MBView" />
+    <TextView
+        android:id="@+id/score"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/ScoreView"
+        android:layout_alignStart="@+id/pb" />
+    <View
+        android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        android:layout_alignBottom="@+id/ScoreView"
+        android:layout_toEndOf="@+id/userIcon" />
+    />
+    <TextView
+        android:id="@+id/MoneyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝        壳"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/ScoreView" />
+    <TextView
+        android:id="@+id/money"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/MoneyView"
+        android:layout_alignStart="@+id/pb" />
+    <View
+        android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        android:layout_alignBottom="@+id/MoneyView"
+        android:layout_toEndOf="@+id/userIcon" />
+    <Button
+        android:id="@+id/BattleStart"
+        android:text="Go Battle"
+        android:layout_width="260dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RunBattle</string>
+    <string name="title_activity_user">UserActivity</string>
 </resources>
