@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 // TODO: verify account and password in server
                 if(isPass){
-                   Intent intent = new Intent(LoginActivity.this, UserActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, UserActivity.class);
                     intent.putExtra("account", account);
                     startActivity(intent);
                     //jump to user information UI
