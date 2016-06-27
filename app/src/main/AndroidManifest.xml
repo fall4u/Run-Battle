@@ -10,7 +10,9 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="48c2d32cfc7939668901b56831bb1a02" />
+            android:value="1668f0db642cff7a6752a734b1db814d" />
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
 
         <activity android:name=".LoginActivity">
             <intent-filter>
